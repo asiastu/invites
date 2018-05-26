@@ -1,0 +1,36 @@
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(10,2,0,0.2) 0%, rgba(10,2,0,0.3) 100%), url(<%= cl_image_path("fullsizeoutput_11f.jpg", crop: :fill) %>)">
+
+<div class="container">
+<h1>Welcome</h1>
+  <div class="form-pw">
+    <% if @wrong %>
+      <div class="hmm">
+        <h3>Please try again?</h3>
+      </div>
+    <% end %>
+
+    <%= form_for :lockup, url: { action: 'unlock' } do |form| %>
+      <% unless @wrong == true %>
+        <p><%= form.password_field "codeword", placeholder: "secret" %></p>
+      <% else %>
+        <p><%= form.password_field "codeword", value: @codeword, class: 'nope' %></p>
+      <% end %>
+
+      <% if lockup_hint_present? %>
+        <p id='hint_icon'>?</p>
+        <p id='hint'><%= lockup_hint_display %></p>
+      <% end %>
+
+      <% if params[:return_to].present? %>
+        <%= form.hidden_field "return_to", value: params[:return_to] %>
+      <% elsif @return_to.present? %>
+        <%= form.hidden_field "return_to", value: @return_to %>
+      <% end %>
+
+      <p><%= button_tag "Enter", class: 'btn btn-primary' %></p>
+    <% end %>
+
+  </div>
+
+  </div>
+</div>
