@@ -1,2 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-container">
+  <div class="video-container">
+    <iframe width="830" height="560" src="https://www.youtube.com/embed/XmSdTa9kaiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="buttons-home">
+    <%= link_to "RSVP", new_attendee_path, :class => "btn btn-primary" %>
+  </div>
+</div>
+
+
+<!-- button where you can put in email and if your email exists, takes you to show page for your rez, and edit page there. -->

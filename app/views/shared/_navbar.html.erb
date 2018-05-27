@@ -1,0 +1,87 @@
+
+<div class=" hidden-xs hidden-sm mobile-nav-wrapper">
+  <nav>
+      <div id="upper-logo">
+         <%= link_to cl_image_tag("fullsizeoutput_120.jpg", height: 50), root_path, :class => "logo"%>
+      </div>
+      <div class="site-info">
+        <div class="site-city">Amelia</div>
+        <div class="site-county">Umbria</div>
+        <div class="site-country">Italy</div>
+      </div>
+    <div class="desktop-menu">
+      <ul class="menu-desktop-list">
+        <li>
+          <%= link_to 'Plan your trip', pages_planning_your_trip_path, :class => 'desktop-menu-item'  %>
+        </li>
+        <li>
+          <%= link_to 'RSVP',  new_attendee_path, :class => 'desktop-menu-item'%>
+        </li>
+        <li>
+          <%= link_to 'Map',  pages_map_path, :class => 'desktop-menu-item' %>
+        </li>
+        <li>
+          <%= link_to 'About_Amelia',  pages_about_amelia_path, :class => 'desktop-menu-item' %>
+        </li>
+        <li>
+          <%= link_to 'Itinerary',  pages_itinerary_path, :class => 'desktop-menu-item' %>
+        </li>
+        <li>
+          <%= link_to 'Accommodations',  pages_accommodations_path, :class => 'desktop-menu-item' %>
+        </li>
+        <li>
+          <%= link_to 'Our Story',  pages_our_story_path, :class => 'desktop-menu-item' %>
+        </li>
+        <li>
+          <%= link_to 'Gift Registry',  pages_gift_registry_path, :class => 'desktop-menu-item' %>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="page-divider"></div>
+  </nav>
+</div>
+
+<div class="hidden-md hidden-lg mobile-nav-wrapper">
+  <nav>
+    <div class="menu-mobile">
+      <button class="nav-menu-button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Menu
+      </button>
+        <div class="collapse menu-contents" id="collapseExample">
+          <div>
+            <%= link_to 'Plan your trip', pages_planning_your_trip_path, :class => 'mobile-menu-item'  %>
+          </div>
+          <div>
+            <%= link_to 'RSVP',  new_attendee_path, :class => 'mobile-menu-item'%>
+          </div>
+          <div>
+            <%= link_to 'Map',  pages_map_path, :class => 'mobile-menu-item' %>
+          </div>
+          <div>
+            <%= link_to 'About_Amelia',  pages_about_amelia_path, :class => 'mobile-menu-item' %>
+          </div>
+          <div>
+            <%= link_to 'Itinerary',  pages_itinerary_path, :class => 'mobile-menu-item' %>
+          </div>
+          <div>
+            <%= link_to 'Accommodations',  pages_accommodations_path, :class => 'mobile-menu-item' %>
+          </div>
+          <div>
+            <%= link_to 'Our Story',  pages_our_story_path, :class => 'mobile-menu-item' %>
+          </div>
+          <div>
+            <%= link_to 'Gift Registry',  pages_gift_registry_path, :class => 'mobile-menu-item' %>
+          </div>
+        </div>
+      </div>
+    <div id="upper-logo">
+      <%= link_to cl_image_tag("fullsizeoutput_120.jpg", height: 50), root_path, :class => "logo"%>
+    </div>
+    <div class="site-info">
+      <div class="site-city">Amelia</div>
+      <div class="site-county">Umbria</div>
+      <div class="site-country">Italy</div>
+    </div>
+  </nav>
+</div>
