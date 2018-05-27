@@ -3,6 +3,7 @@
     <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
       <h1>Profile</h1>
       <%= simple_form_for @attendee do |t| %>
+        <%= t.input :attending, :collection => %w[yes no], class: "form-control" %>
         <%= t.input :first_name, class: "form-control" %>
         <%= t.input :last_name, class: "form-control" %>
         <%= t.input :food_choice, :collection => %w[beef chicken vegetarian]%>

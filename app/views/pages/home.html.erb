@@ -1,9 +1,12 @@
 <div class="home-container">
   <div class="video-container">
-    <iframe width="830" height="560" src="https://www.youtube.com/embed/XmSdTa9kaiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+    <iframe width="830" height="560" src="https://www.youtube.com/embed/5WybiA263bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
   </div>
   <div class="buttons-home">
-    <%= link_to "RSVP", new_attendee_path, :class => "btn btn-primary" %>
+    <div>
+      <%= link_to "RSVP", new_attendee_path, :class => "btn btn-primary home-button" %>
+      <%= link_to "Can't make it", new_attendee_path, :class => "btn btn-primary home-button" %>
+    </div>
   </div>
 </div>
 

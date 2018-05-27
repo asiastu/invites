@@ -32,9 +32,17 @@ body {
     line-height: 1.6em;
 }
 
-.total-wrapper {
-  margin: 10px;
+.video-container {
+  padding-top: 35px;
+  padding-bottom: 20px;
 }
-.home-container {
-  align-items: center;
+
+.buttons-home {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-button {
+  margin-left: 10px;
+  margin-right: 10px;
 }
